@@ -1,12 +1,14 @@
 <?php
+    // Author: Abdel
+    // Initialisatie
+
+	// require_once('classes/user.php');
 	require_once "../vendor/autoload.php";
-	use Login\classes\User;
+	use Opdracht6b\classes\User;
 
-	
+
 	// Is de login button aangeklikt?
-	if(isset($_POST['login-btn']) ){
-
-		// require_once('classes/user.php');
+	if(isset($_POST['login-btn']) ) {
 
 
 		$user = new User();
@@ -44,8 +46,8 @@
 			<script>window.location = 'login_form.php'</script>";
 		
 		}
-		
 	}
+
 ?>
 
 <!DOCTYPE html>
@@ -53,7 +55,6 @@
 	<head>
 	</head>
 <body>
-
 	<h3>PHP - PDO Login and Registration</h3>
 	<hr/>
 	
@@ -71,6 +72,6 @@
 		<br>
 		<a href="register_form.php">Registration</a>
 	</form>
-		
+	
 </body>
 </html>
